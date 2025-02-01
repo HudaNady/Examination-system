@@ -20,7 +20,7 @@ async function startExam(subject) {
     currentSubject = subject;
     sessionStorage.setItem("time", time);
     sessionStorage.setItem('currentSubject', JSON.stringify(currentSubject));
-    window.location.href='../quize/quize.html'
+    window.location.replace('../quize/quize.html')
 }
 
 

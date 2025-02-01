@@ -6,7 +6,7 @@ function logOut(){
     sessionStorage.removeItem('choisesSelected')
     sessionStorage.removeItem('markedQuestions')
     sessionStorage.removeItem('answers')
-    window.location.href = "../index.html";
+    window.location.replace("../index.html") ;
 }
 function backHome(){
     localStorage.removeItem("submit");

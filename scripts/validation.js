@@ -12,14 +12,14 @@ let signIn=false
 function showError(){
     $('.alert').addClass("error");
 }
-document.addEventListener("DOMContentLoaded", function () {
-    if (localStorage.getItem("signUp") === "true") {
-        window.location.href = "../signIn/signIn.html";
-    }
-    if (localStorage.getItem("signIn") === "true") {
-        window.location.href = "../home/home.html";
-    }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     if (localStorage.getItem("signUp") === "true") {
+//         window.location.replace("../signIn/signIn.html");
+//     }
+//     if (localStorage.getItem("signIn") === "true") {
+//         window.location.replace("../home/home.html");
+//     }
+// });
 if(localStorage.getItem("userlist")!=null){
     usersList=JSON.parse(localStorage.getItem("userlist"))
 }
@@ -168,7 +168,7 @@ function submit(){
             signUp=true
             localStorage.setItem("signUp",JSON.stringify(signUp))
             clearForm()
-            window.location.href="../signIn/signIn.html"
+            window.location.replace("../signIn/signIn.html")
         }
     }
     else{
@@ -193,7 +193,7 @@ function login(){
                 localStorage.setItem("signIn",JSON.stringify(signIn))
                 localStorage.setItem("currentUser", JSON.stringify(usersList[i]));
                 clearForm()
-                window.location.href="../home/home.html"
+                window.location.replace("../home/home.html")
                 } else{
                     showError()
                     $("#error").html("Invalid email or password ").removeClass('d-none')
