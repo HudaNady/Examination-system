@@ -1,0 +1,308 @@
+{
+  "html": [
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyper Text Machine Language"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which HTML element is used to define a paragraph?",
+      "options": [
+        "<para>",
+        "<p>",
+        "<par>",
+        "<paragraph>"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which HTML attribute is used to specify inline CSS styles?",
+      "options": [
+        "class",
+        "style",
+        "css",
+        "inline"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<url>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the correct HTML element for the largest heading?",
+      "options": [
+        "<h1>",
+        "<heading>",
+        "<head>",
+        "<h6>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the correct HTML element for inserting a line break?",
+      "options": [
+        "<br>",
+        "<break>",
+        "<lb>",
+        "<line>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How do you specify that an HTML form input is required?",
+      "options": [
+        "required='true'",
+        "validate='true'",
+        "required",
+        "mandatory"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which HTML element is used to define the title of a document?",
+      "options": [
+        "<meta>",
+        "<title>",
+        "<head>",
+        "<footer>"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the purpose of the <head> tag in HTML?",
+      "options": [
+        "To contain metadata",
+        "To display content",
+        "To create links",
+        "None of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following elements are all <table> elements?",
+      "options": [
+        "<table><head><tfoot>",
+        "<table><tr><td>",
+        "<table><tr><header>",
+        "<table><thead><body>"
+      ],
+      "answer": 1
+    }
+  ],
+  "css": [
+    {
+      "question": "What does CSS stand for?",
+      "options": [
+        "Cascading Style Sheets",
+        "Creative Style Sheets",
+        "Computer Style Sheets",
+        "Colorful Style Sheets"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which property is used in CSS to change the text color?",
+      "options": [
+        "font-color",
+        "text-color",
+        "color",
+        "text-style"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the correct syntax for a CSS comment?",
+      "options": [
+        "// This is a comment",
+        "<!-- This is a comment -->",
+        "/* This is a comment */",
+        "** This is a comment **"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which HTML tag is used to define an internal style sheet?",
+      "options": [
+        "<css>",
+        "<style>",
+        "<script>",
+        "<link>"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How do you add a background color in CSS?",
+      "options": [
+        "background: color;",
+        "color: background;",
+        "bgcolor: color;",
+        "background-color: color;"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which property is used to change the font of an element?",
+      "options": [
+        "font-family",
+        "text-font",
+        "font-weight",
+        "font-style"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How do you select an element with id 'header' in CSS?",
+      "options": [
+        "#header",
+        ".header",
+        "header",
+        "header#"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which property is used to add space between the elements in CSS?",
+      "options": [
+        "padding",
+        "margin",
+        "spacing",
+        "border"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which CSS property controls the text size?",
+      "options": [
+        "font-size",
+        "text-size",
+        "text-style",
+        "font-style"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the correct CSS syntax to change the color of a paragraph to red?",
+      "options": [
+        "p {color:red;}",
+        "p {text-color:red;}",
+        "p {color=red;}",
+        "p {font-color:red;}"
+      ],
+      "answer": 0
+    }
+  ],
+  "js": [
+    {
+      "question": "What does JS stand for?",
+      "options": [
+        "JavaScript",
+        "JavaStyle",
+        "JavaServer",
+        "None of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which company developed JavaScript?",
+      "options": [
+        "Netscape",
+        "Mozilla",
+        "Microsoft",
+        "Oracle"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+      "options": [
+        "<script src='script.js'>",
+        "<script href='script.js'>",
+        "<script name='script.js'>",
+        "<script file='script.js'>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How do you create a function in JavaScript?",
+      "options": [
+        "function:myFunction()",
+        "function myFunction()",
+        "function = myFunction()",
+        "create myFunction()"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the correct way to write an array in JavaScript?",
+      "options": [
+        "var colors = 'red', 'green', 'blue'",
+        "var colors = (1:'red', 2:'green', 3:'blue')",
+        "var colors = ['red', 'green', 'blue']",
+        "var colors = [1='red', 2='green', 3='blue']"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "How do you add a comment in JavaScript?",
+      "options": [
+        "// this is a comment",
+        "<!-- this is a comment -->",
+        "' this is a comment",
+        "# this is a comment"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which operator is used to assign a value to a variable?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        ":="
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the correct way to declare a variable in JavaScript?",
+      "options": [
+        "var myVariable;",
+        "variable myVariable;",
+        "v myVariable;",
+        "decl myVariable;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How do you find the number with the highest value in an array?",
+      "options": [
+        "Math.max()",
+        "Math.high()",
+        "Math.maximum()",
+        "Math.top()"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What does the 'this' keyword refer to in JavaScript?",
+      "options": [
+        "The current object",
+        "The global object",
+        "The parent object",
+        "The previous object"
+      ],
+      "answer": 0
+    }
+  ]
+}

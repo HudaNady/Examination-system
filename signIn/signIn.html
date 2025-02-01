@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signIn</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="font p-3 d-flex align-items-center justify-content-center vh-100 " >
+    <div class="container p-4 my-3 rounded shadow mainColor" >
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center text-center">
+                <div class="col-12 px-lg-5 shadow rounded-2 form form-container d-flex align-items-center justify-content-center">
+                        <form action="" id="login" class="w-100">
+                        <h1 class="lightBroun">Sign In</h1>
+                        <div id="error" class="alert alert-danger w-100 mt-1 mb-0 d-none text-center">
+                        </div>
+                        <div class="input-container ic1">
+                          <input id="email" class="input form-control" type="text" placeholder=" " />
+                          <div class="cut "></div>
+                          <label for="email" class="Inputplaceholder">Email</label>
+                        </div>
+                        <div id="emailAlert" class="alert alert-danger w-100 mt-1 mb-0 d-none ">
+                            Email not valid *exemple@yyy.zzz
+                        </div>
+                        <div class="input-container ic1 inp">
+                            <input id="pass" class="input form-control" type="password" placeholder=" " />
+                            <div class="cut"></div>
+                            <label for="pass" class="Inputplaceholder">Password</label>
+                            <span class="formkit--eyeclosed"></span>
+                            <span class="formkit--eye"></span>
+                          </div>
+                          <div id="userPasswordAlert" class="alert alert-danger w-100 mt-1 mb-0 d-none ">
+                            Enter valid password Minimum eight characters, at least one letter and one number:
+                           </div>
+                          <button type="submit" class="submit submitBook btn btn-static lightBroun mt-3">Sign In</button>
+                          <p class="mt-1 brownColor " id="signSpan">Don’t have an account?<a class="lightBroun p-0 " href="../signUp/singnUp.html">Sign Up</a></p>
+                        </form>
+                    </div>
+            </div>
+            <div class="col-lg-6  d-flex align-items-center justify-content-center  ">
+                <img src="../images/sign in.svg" class="w-75 z-3 position-relative img-fluid" alt="Sign In Illustration">
+            </div>
+        </div>
+    
+    </div>
+    <script src="../scripts/jquery-3.7.1.js"></script>
+    <script src="../scripts/validation.js"></script>
+</body>
+</html>

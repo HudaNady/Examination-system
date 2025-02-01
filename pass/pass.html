@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pass</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="font p-3 d-flex align-items-center justify-content-center vh-100" >
+    <div class="container my-3 rounded shadow mainColor">
+        <div class="row ">
+            <div id="gender" class="col-12 col-md-6 text-center">
+                <img src="" class="w-75" alt="">
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center" >
+    <div class="progress-circle mt-3" id="progress-circle">
+        <span id="progress-text">0%</span>
+    </div>
+</div>
+            <div class="row mb-3 text-center">
+                <h4 id="score"></h4>
+            </div>
+        </div>
+        <div class="row pb-4 d-flex justify-content-around ">
+            <div class="col-3 mx-auto col-10 col-md-4 flex-sm-column my-2">
+                <button onclick="backHome()" class="btn btn-static lightBroun p-2 w-100">Go to home</button>
+            </div>
+            <div class="col-3 mx-auto col-10 col-md-4 flex-sm-column my-2">
+                <button onclick="logOut()" class="btn btn-outline brownColor  w-100">Log out</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../scripts/jquery-3.7.1.js"></script>
+    <script src="../scripts/score.js"></script>
+    <script src="../scripts/logOut.js"></script>
+
+</body>
+</html>
