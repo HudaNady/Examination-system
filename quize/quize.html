@@ -1,64 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quize</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="../styles/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body class=" font pt-lg-5 ">
-    <div id="questionsLoading" class="divLoad load d-none">
-        <span class="loader"></span>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body class="font">
+    <div id="questionsLoading" class="divLoad load d-none h-100">
+      <span class="loader"></span>
     </div>
-    <div id="questionsEmpty" class=" d-none empty divLoad">
-        <h1>empty</h1>
+    <div id="questionsEmpty" class="d-none flex-column empty divLoad h-100">
+      <h1>empty</h1>
+      <div class="col-lg-3 mx-auto pt-4">
+        <button onclick="backHome()" class="btn btn-static lightBroun w-100">
+          Go to home
+        </button>
+      </div>
     </div>
-    <div id="questionsError" class=" errorr  mainColor d-none" style=" height: 100vh; width: 100%;">
-        <img src="../images/404.svg" width="100%" height="75%" alt="">
-    </div>  
-    <div id="mainContiner" class=" d-flex align-items-center justify-content-center d-none ">
-        <div class="container p-lg-5 p-3 my-3 rounded shadow mainColor  ">
-            <div class="row gap-3 p-5 justify-content-around lightBroun">
-                <div class="col-lg-8 p-3 shadow  rounded-2 brownbackground ">
-                    <div class="ms-2 " id="timer">
-                        <i class="fa-regular fa-clock"></i>
-                        <span id="time"></span>
-                    </div>
-                    <div>
-                        <h6>Choose the correct answer</h6>
-                    </div>
-                    <div id="questionsContainer" class="d-flex justify-content-between align-items-center mainColor py-2  px-3 rounded "></div>
-                    <div id="choices" class="choices">
-                        
-                    </div>
-                    <div class="footer gap-3  d-lg-flex  align-items-center justify-content-between text-center p-3">
-                        <div class="d-flex gap-2 justify-content-center align-items-center  w-lg-25">
-                            <button id="prev" type="button" class="btn mainColor lightBroun rounded-5 disabled"  title="prev"><i class="fa-solid fa-angle-left"></i></button>
-                            <div class="count"><span id="currentQuestionIndex">0</span> out of <span id="totalQuestions">0</span></div>
-                            <button id="next" type="button" class="btn mainColor lightBroun rounded-5" title="next"><i class="fa-solid fa-angle-right"></i></button>
-                        </div>
-                        <button id="submit" class="btn mainColor lightBroun w-lg-25 px-5  mt-3 rounded-2">submit</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 pb-4 shadow  rounded-2 brownbackground ">
-                    <div class="text-center py-3 border-bottom">
-                        <div>Marked question</div>
-                    </div>
-                    <div class="marked-questions" id="markedQuestionsContainer">
-                    </div>
-
-                </div>
+    <div
+      id="questionsError"
+      class="d-none errorr mainColor w-100 text-center"
+      style="height: 100%"
+    >
+      <img src="../images/404.svg" class="mt-5 pt-5" alt="" />
+      <div class="col-3 mx-auto pt-4">
+        <button onclick="backHome()" class="btn btn-static lightBroun w-100">
+          Go to home
+        </button>
+      </div>
+    </div>
+    <div
+      id="mainContiner"
+      class="d-flex align-items-center justify-content-center d-none pt-lg-5"
+    >
+      <div class="container p-lg-5 p-3 my-3 rounded shadow mainColor">
+        <div class="row gap-3 p-5 justify-content-around lightBroun">
+          <div class="col-lg-8 p-3 shadow rounded-2 brownbackground">
+            <div class="ms-2" id="timer">
+              <i class="fa-regular fa-clock"></i>
+              <span id="time"></span>
             </div>
+            <div>
+              <h6>Choose the correct answer</h6>
+            </div>
+            <div
+              id="questionsContainer"
+              class="d-flex justify-content-between align-items-center mainColor py-2 px-3 rounded"
+            ></div>
+            <div id="choices" class="choices"></div>
+            <div
+              class="footer gap-3 d-lg-flex align-items-center justify-content-between text-center p-3"
+            >
+              <div
+                class="d-flex gap-2 justify-content-center align-items-center w-lg-25"
+              >
+                <button
+                  id="prev"
+                  type="button"
+                  class="btn mainColor lightBroun rounded-5 disabled"
+                  title="prev"
+                >
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <div class="count">
+                  <span id="currentQuestionIndex">0</span> out of
+                  <span id="totalQuestions">0</span>
+                </div>
+                <button
+                  id="next"
+                  type="button"
+                  class="btn mainColor lightBroun rounded-5"
+                  title="next"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+              <button
+                id="submit"
+                class="btn mainColor lightBroun w-lg-25 px-5 mt-3 rounded-2"
+              >
+                submit
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3 pb-4 shadow rounded-2 brownbackground">
+            <div class="text-center py-3 border-bottom">
+              <div>Marked question</div>
+            </div>
+            <div class="marked-questions" id="markedQuestionsContainer"></div>
+          </div>
         </div>
+      </div>
     </div>
-    <script>
-        
-    </script>
+    <script></script>
     <script src="../scripts/jquery-3.7.1.js"></script>
-    <!-- <script src="../scripts/index.js"></script> -->
     <script src="../scripts/quize.js"></script>
-</body>
+    <script src="../scripts/logOut.js"></script>
+  </body>
 </html>

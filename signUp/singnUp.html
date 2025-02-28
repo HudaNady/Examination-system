@@ -1,90 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>signUp</title>
-    <link rel="stylesheet" href="../styles/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body class="font d-flex align-items-center justify-content-center vh-100 overflow-hidden">
-    <div class="container mt-3 mx-2 py-5 px-3 rounded shadow mainColor" >
-        <div class="row flex-column-reverse flex-lg-row">
-            <div class="col-lg-6  d-flex align-items-center justify-content-center text-center">
-                    <div class="col-12 px-lg-5 shadow  rounded-2 form form-container">
-                      <form action="" id="signup">
-                        <h1 class="lightBroun">Sign Up</h1>
-                        <div id="error" class="alert alert-danger w-100 mt-1 mb-0 d-none text-center">
-                        </div>
-                        <div class="input-container ic1">
-                          <input id="firstname" class="input form-control  " type="text" placeholder=" " /> 
-                          <div class="cut"></div>
-                          <p class="name-error text-start px-4 d-none" style="color: red;"></p>
-                          <label for="firstname" class="Inputplaceholder">First name</label>
-                        </div>
-                        <div id="firstnameAlert" class="alert alert-danger w-100 mt-1 mb-0 d-none  ">
-                          Special characters and numbers not allowed
-                      </div>
-                        <div class="input-container ic1">
-                          <input id="lastname" class="input form-control  " type="text" placeholder=" " /> 
-                          <div class="cut"></div>
-                          <p class="name-error text-start px-4 d-none" style="color: red;"></p>
-                          <label for="lastname" class="Inputplaceholder">Last name</label>
-                        </div>
-                        <div id="lastnameAlert" class="alert alert-danger w-100 mt-1 mb-0 d-none  ">
-                          Special characters and numbers not allowed
-                      </div>
-                        <div class="input-container ic1">
-                          <input id="email" onkeyup="" class="input form-control" type="text" placeholder=" " />
-                          <div class="cut "></div>
-                          <p class="email-error error text-start px-4 d-none" style="color: red;">error</p>
-                          <label for="email" class="Inputplaceholder">Email</label>
-                        </div>
-                        <div id="emailAlert" class="alert alert-danger w-100 mt-1 mb-0 d-none ">
-                          Email not valid *exemple@yyy.zzz
-                          </div>
-                        <div class="input-container ic1">
-                            <input id="pass" class="input form-control" type="password" placeholder=" " />
-                            <div class="cut"></div>
-                            <p class="pass-error error text-start px-4 d-none" style="color: red;"></p>
-                            <label for="pass" class="Inputplaceholder">Password</label>
-                            <span class="formkit--eyeclosed"></span>
-                            <span class="formkit--eye"></span>
-                        </div>
-                        <div id="userPasswordAlert" class="alert alert-danger w-100 mt-1 mb-0 d-none ">
-                            Enter valid password Minimum eight characters, at least one letter and one number:
-                        </div>
-                        <div class="input-container ic1">
-                            <input id="repass" class="input form-control" type="password" placeholder=" " />
-                            <div class="cut"></div>
-                            <p class="repass-error error text-start px-4 d-none" style="color: red;"></p>
-                            <label for="repass" class="Inputplaceholder">Repassword</label>
-                            <span class="formkit--eyeclosed"></span>
-                            <span class="formkit--eye"></span>
-                          </div>
-                          <div id="rePasswordAlert" class="alert alert-danger w-100 mt-1 mb-0 d-none ">
-                            No match password 
-                          </div>
-                          <div class="input-container ic1 d-flex justify-content-around p-3 input">
-                            <div class="cut gender"><p>Gender</p></div>
-                            <input id="male" class="form-check-input" name="flexRadioDefault" type="radio" value="male" />
-                            <label for="male" class=""><img src="../images/male.svg" class="w-25 " alt=""></label>
-                            <input id="female" class="form-check-input" name="flexRadioDefault" type="radio" value="female" />
-                            <label for="female" class=""><img src="../images/female.svg" class="w-25" alt=""></label>
-                          </div>
-                          <div id="genderAlert" class="alert alert-danger w-100 mt-1 mb-0 d-none ">
-                          </div>
-                          <button type="submit" class="submit submitBook btn btn-static lightBroun mt-3">Sign UP</button>
-                          <span class="mt-1 brownColor" id="signSpan">Have already an acount? <a class="lightBroun p-0 " href="../signIn/signIn.html">Sign In</a></span>
-                    </form>
-                    </div>
-            </div>
-            <div class="col-lg-6 d-flex align-items-center mb-4 mb-lg-0 d-none d-lg-block">
-                <img src="../images/signup.svg" class="w-100 z-3 position-relative img-fluid" alt="Sign Up Illustration">
-            </div>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body
+    class="font d-flex align-items-center justify-content-center vh-100 overflow-hidden"
+  >
+    <div class="container mx-2 py-5 px-lg-5 rounded shadow mainColor">
+      <div class="row flex-column-reverse flex-lg-row">
+        <div
+          class="col-lg-6 d-flex align-items-center justify-content-center text-center"
+        >
+          <div class="col-12 px-3 shadow rounded-2 form form-container">
+            <form action="" id="signup">
+              <h1 class="lightBroun">Sign Up</h1>
+              <div
+                id="error"
+                class="alert alert-danger w-100 mt-1 mb-0 d-none text-center"
+              ></div>
+              <div class="input-container ic1">
+                <input
+                  id="firstname"
+                  class="input form-control"
+                  type="text"
+                  placeholder=" "
+                />
+                <div class="cut"></div>
+                <p
+                  class="name-error text-start px-4 d-none"
+                  style="color: red"
+                ></p>
+                <label for="firstname" class="Inputplaceholder"
+                  >First name</label
+                >
+              </div>
+              <div
+                id="firstnameAlert"
+                class="alert alert-danger w-100 mt-1 mb-0 d-none"
+              >
+                Name start with capital letter ,special characters and numbers
+                not allowed
+              </div>
+              <div class="input-container ic1">
+                <input
+                  id="lastname"
+                  class="input form-control"
+                  type="text"
+                  placeholder=" "
+                />
+                <div class="cut"></div>
+                <p
+                  class="name-error text-start px-4 d-none"
+                  style="color: red"
+                ></p>
+                <label for="lastname" class="Inputplaceholder">Last name</label>
+              </div>
+              <div
+                id="lastnameAlert"
+                class="alert alert-danger w-100 mt-1 mb-0 d-none"
+              >
+                Name start with capital letter ,special characters and numbers
+                not allowed
+              </div>
+              <div class="input-container ic1">
+                <input
+                  id="email"
+                  onkeyup=""
+                  class="input form-control"
+                  type="text"
+                  placeholder=" "
+                />
+                <div class="cut"></div>
+                <p
+                  class="email-error error text-start px-4 d-none"
+                  style="color: red"
+                >
+                  error
+                </p>
+                <label for="email" class="Inputplaceholder">Email</label>
+              </div>
+              <div
+                id="emailAlert"
+                class="alert alert-danger w-100 mt-1 mb-0 d-none"
+              >
+                Email not valid *exemple@yyy.zzz
+              </div>
+              <div class="input-container ic1">
+                <input
+                  id="pass"
+                  class="input form-control"
+                  type="password"
+                  placeholder=" "
+                />
+                <div class="cut"></div>
+                <p
+                  class="pass-error error text-start px-4 d-none"
+                  style="color: red"
+                ></p>
+                <label for="pass" class="Inputplaceholder">Password</label>
+                <span class="formkit--eyeclosed"></span>
+                <span class="formkit--eye"></span>
+              </div>
+              <div
+                id="userPasswordAlert"
+                class="alert alert-danger w-100 mt-1 mb-0 d-none"
+              >
+                Enter valid password Minimum eight characters, at least one
+                letter and one number:
+              </div>
+              <div class="input-container ic1">
+                <input
+                  id="repass"
+                  class="input form-control"
+                  type="password"
+                  placeholder=" "
+                />
+                <div class="cut"></div>
+                <p
+                  class="repass-error error text-start px-4 d-none"
+                  style="color: red"
+                ></p>
+                <label for="repass" class="Inputplaceholder">Repassword</label>
+                <span class="formkit--eyeclosed"></span>
+                <span class="formkit--eye"></span>
+              </div>
+              <div
+                id="rePasswordAlert"
+                class="alert alert-danger w-100 mt-1 mb-0 d-none"
+              >
+                No match password
+              </div>
+              <div
+                class="input-container ic1 d-flex justify-content-around align-items-center p-3 input"
+              >
+                <div class="cut gender"><p>Gender</p></div>
+                <input
+                  id="male"
+                  class="form-check-input m-0"
+                  name="flexRadioDefault"
+                  type="radio"
+                  value="male"
+                />
+                <label for="male" class="text-start"
+                  ><img src="../images/male.svg" class="w-25 ms-3" alt=""
+                /></label>
+                <input
+                  id="female"
+                  class="form-check-input m-0"
+                  name="flexRadioDefault"
+                  type="radio"
+                  value="female"
+                />
+                <label for="female" class="text-start"
+                  ><img src="../images/female.svg" class="w-25 ms-3" alt=""
+                /></label>
+              </div>
+              <div
+                id="genderAlert"
+                class="alert alert-danger w-100 mt-1 mb-0 d-none"
+              ></div>
+              <button
+                type="submit"
+                class="submit submitBook btn btn-static lightBroun mt-3"
+              >
+                Sign UP
+              </button>
+              <span class="mt-1 brownColor" id="signSpan"
+                >Have already an acount?
+                <a class="lightBroun p-0" href="../signIn/signIn.html"
+                  >Sign In</a
+                ></span
+              >
+            </form>
+          </div>
         </div>
+        <div
+          class="col-lg-6 d-flex align-items-center mb-4 mb-lg-0 d-none d-lg-block"
+        >
+          <img
+            src="../images/signup.svg"
+            class="w-100 z-3 position-relative img-fluid"
+            alt="Sign Up Illustration"
+          />
+        </div>
+      </div>
     </div>
     <script src="../scripts/jquery-3.7.1.js"></script>
     <script src="../scripts/validation.js"></script>
-</body>
+  </body>
 </html>

@@ -12,52 +12,27 @@
     },
     {
       "question": "Which HTML element is used to define a paragraph?",
-      "options": [
-        "<para>",
-        "<p>",
-        "<par>",
-        "<paragraph>"
-      ],
+      "options": ["<para>", "<p>", "<par>", "<paragraph>"],
       "answer": 1
     },
     {
       "question": "Which HTML attribute is used to specify inline CSS styles?",
-      "options": [
-        "class",
-        "style",
-        "css",
-        "inline"
-      ],
+      "options": ["class", "style", "css", "inline"],
       "answer": 1
     },
     {
       "question": "Which tag is used to create a hyperlink in HTML?",
-      "options": [
-        "<a>",
-        "<link>",
-        "<href>",
-        "<url>"
-      ],
+      "options": ["<a>", "<link>", "<href>", "<url>"],
       "answer": 0
     },
     {
       "question": "What is the correct HTML element for the largest heading?",
-      "options": [
-        "<h1>",
-        "<heading>",
-        "<head>",
-        "<h6>"
-      ],
+      "options": ["<h1>", "<heading>", "<head>", "<h6>"],
       "answer": 0
     },
     {
       "question": "What is the correct HTML element for inserting a line break?",
-      "options": [
-        "<br>",
-        "<break>",
-        "<lb>",
-        "<line>"
-      ],
+      "options": ["<br>", "<break>", "<lb>", "<line>"],
       "answer": 0
     },
     {
@@ -72,12 +47,7 @@
     },
     {
       "question": "Which HTML element is used to define the title of a document?",
-      "options": [
-        "<meta>",
-        "<title>",
-        "<head>",
-        "<footer>"
-      ],
+      "options": ["<meta>", "<title>", "<head>", "<footer>"],
       "answer": 1
     },
     {
@@ -114,12 +84,7 @@
     },
     {
       "question": "Which property is used in CSS to change the text color?",
-      "options": [
-        "font-color",
-        "text-color",
-        "color",
-        "text-style"
-      ],
+      "options": ["font-color", "text-color", "color", "text-style"],
       "answer": 2
     },
     {
@@ -134,12 +99,7 @@
     },
     {
       "question": "Which HTML tag is used to define an internal style sheet?",
-      "options": [
-        "<css>",
-        "<style>",
-        "<script>",
-        "<link>"
-      ],
+      "options": ["<css>", "<style>", "<script>", "<link>"],
       "answer": 1
     },
     {
@@ -154,42 +114,22 @@
     },
     {
       "question": "Which property is used to change the font of an element?",
-      "options": [
-        "font-family",
-        "text-font",
-        "font-weight",
-        "font-style"
-      ],
+      "options": ["font-family", "text-font", "font-weight", "font-style"],
       "answer": 0
     },
     {
       "question": "How do you select an element with id 'header' in CSS?",
-      "options": [
-        "#header",
-        ".header",
-        "header",
-        "header#"
-      ],
+      "options": ["#header", ".header", "header", "header#"],
       "answer": 0
     },
     {
       "question": "Which property is used to add space between the elements in CSS?",
-      "options": [
-        "padding",
-        "margin",
-        "spacing",
-        "border"
-      ],
+      "options": ["padding", "margin", "spacing", "border"],
       "answer": 1
     },
     {
       "question": "Which CSS property controls the text size?",
-      "options": [
-        "font-size",
-        "text-size",
-        "text-style",
-        "font-style"
-      ],
+      "options": ["font-size", "text-size", "text-style", "font-style"],
       "answer": 0
     },
     {
@@ -206,22 +146,12 @@
   "js": [
     {
       "question": "What does JS stand for?",
-      "options": [
-        "JavaScript",
-        "JavaStyle",
-        "JavaServer",
-        "None of the above"
-      ],
+      "options": ["JavaScript", "JavaStyle", "JavaServer", "None of the above"],
       "answer": 0
     },
     {
       "question": "Which company developed JavaScript?",
-      "options": [
-        "Netscape",
-        "Mozilla",
-        "Microsoft",
-        "Oracle"
-      ],
+      "options": ["Netscape", "Mozilla", "Microsoft", "Oracle"],
       "answer": 0
     },
     {
@@ -266,12 +196,7 @@
     },
     {
       "question": "Which operator is used to assign a value to a variable?",
-      "options": [
-        "=",
-        "==",
-        "===",
-        ":="
-      ],
+      "options": ["=", "==", "===", ":="],
       "answer": 0
     },
     {
@@ -286,12 +211,7 @@
     },
     {
       "question": "How do you find the number with the highest value in an array?",
-      "options": [
-        "Math.max()",
-        "Math.high()",
-        "Math.maximum()",
-        "Math.top()"
-      ],
+      "options": ["Math.max()", "Math.high()", "Math.maximum()", "Math.top()"],
       "answer": 0
     },
     {
